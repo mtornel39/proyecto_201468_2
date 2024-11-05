@@ -1,0 +1,192 @@
+<!doctype html>
+
+<script type="text/javascript">
+  
+// Obtén la URL actual
+const url = new URL(window.location.href);
+
+// Usa URLSearchParams para capturar los parámetros
+const params = new URLSearchParams(url.search);
+
+// Captura los valores que necesitas
+const usuario = params.get('user'); // "Juan"
+//const edad = params.get('edad'); // "25"
+
+
+
+function valida(){
+
+ respuesta=confirm("¿esta seguro que quiere loggearse");
+
+    if (respuesta==true) {
+
+      document.formu1.submit();
+
+    } else {
+
+      alert("Ok siga disfrutando contenido gratis");
+    }
+
+
+}
+
+
+
+</script>
+
+
+<style type="text/css">
+  
+body{
+
+ background-color: #FA96F3;
+}
+
+footer{
+
+background-color: #343a40;
+   color: white;
+   padding: 1rem;
+   text-align: center;
+}
+
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cultura Coreana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+
+  </head>
+  <body style="background-color: #CC0000;">
+
+
+<nav class="navbar navbar-expand-md navbar-light" style="background-color:  white;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/territorio_korea.jpg" alt="Bootstrap" width="50" height="50">
+      Hallyu Chile</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  aria-current="page" style="color: #0000CC;" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #0000CC;">¿Que es Hallyu?</a>
+        </li>
+        <li class="nav-item dropdown" style="color: #0000CC;">
+          <a class="nav-link dropdown-toggle" style="color: #0000CC;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Hallyu Populares
+          </a>
+          <ul class="dropdown-menu" style="color: #0000CC;" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#kpop">K-Pop</a></li>
+            <li><a class="dropdown-item" href="#kdramas">K-Dramas</a></li>
+            <li><a class="dropdown-item" href="#belleza_moda">Belleza y Moda</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form action="login.html" method="GET" name="formu1" id="formu1" class="d-flex">
+        <input class="form-control me-2" type="buscar" placeholder="찾다" aria-label="Search" id="buscar" name="buscar">
+        <div id="contenedor">
+        <button class="btn btn-outline-danger" type="button" id="boton_l" name="boton_l" onclick="valida();">Login</button>
+        </div>
+      </form>
+    </div> 
+  </div>
+</nav>
+
+
+<div class="container bg-light my-4"> 
+  <div class="row">
+    <div class="col-sm-12 col-md-6 m-0 p-0"><img src="img/olacorea1.jpg" class="img-fluid img-thumbnail"></div>
+    <div class="col-sm-12 col-md-6 m-0 p-0">
+      <p class="m-2 p-1">
+      <h1 class="display-2 text-center" style="color: #0000CC;">Hallyu</h1>
+      <p style="color: #0000CC;">Hallyu, también conocida como la Ola Coreana, es un fenómeno cultural que describe el creciente interés a nivel mundial por la cultura contemporánea de Corea del Sur. Este fenómeno se ha extendido a lo largo de las últimas décadas y ha llevado a la popularidad de diversos aspectos de la cultura coreana, como la música (K-pop), las series de televisión (K-dramas), el cine, la moda, la belleza y la gastronomía.
+      </p> 
+      </div>
+  </div>
+</div>
+
+
+
+<!--seccion productos -->
+
+<div class="container bg-light text-center p-2"> <h2>¿Qué ha impulsado el Hallyu?</h2></div>
+<section class="p-2">
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/k-pop.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" id="kpop">K-pop</h5>
+        <p class="card-text">Grupos como BTS, BLACKPINK y TWICE han conquistado las listas musicales a nivel mundial, generando un gran fandom y llevando la música coreana a un público global.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-xs-12 col-md-4"><div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/k-dramas.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" id="kdramas">K-dramas</h5>
+        <p class="card-text"> Series como "Squid Game" y "Crash Landing on You" han cautivado a millones de espectadores en todo el mundo, mostrando historias conmovedoras y producciones de alta calidad.
+        </p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div></div>
+    <div class="col-xs-12 col-md-4"><div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/belleza.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" id="belleza_moda">Belleza y moda</h5>
+        <p class="card-text">Sus productos innovadores y rutinas de cuidado facial, ha influido en la industria de la belleza a nivel mundial. La moda coreana también ha ganado popularidad, destacando por su estilo único y juvenil.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div></div>
+  </div>
+</div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- SECCION PIE DE PÁGINA -->
+<footer class="text-white bg-dark">
+  <div class="container">
+    <p class="text-xs-center">Copyright © Interfaz de Usuario 2024. </p>
+  </div>
+</footer>
+  </body>
+<script type="text/javascript">
+  
+boton= document.getElementById('boton_l');
+boton.remove();
+contenedor=document.getElementById('contenedor');
+
+contenedor.innerHTML +="Bienvenid@ " + usuario; 
+
+</script>
+
+</html>

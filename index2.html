@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Bootstrap</title>
+    <!-- Enlace a Bootstrap CSS desde CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        .footer {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container-rojo {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .container-blanco {
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Sitio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quién soy?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-4">
+        <div class="container-rojo text-center">
+            <h2>Contenido Rojo</h2>
+            <p>Este es un contenedor de color rojo.</p>
+        </div>
+        <div class="container-blanco text-center">
+            <h2>Descubre Corea del Sur</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Seoul_skyline_at_night.jpg/1920px-Seoul_skyline_at_night.jpg" alt="Seúl, Corea del Sur" class="img-fluid" style="max-width: 100%; height: auto;">
+            <h3>Lugares Interesantes</h3>
+            <ul class="list-unstyled">
+                <li>1. Seúl</li>
+                <li>2. Busan</li>
+                <li>3. Jeju</li>
+                <li>4. Gyeongju</li>
+                <li>5. Incheon</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Gracias IPVG</p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
