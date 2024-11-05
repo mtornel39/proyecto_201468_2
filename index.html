@@ -180,13 +180,15 @@ background-color: #343a40;
 </footer>
   </body>
 <script type="text/javascript">
-  
+  if(usuario==null) {
+
+  } else {
 boton= document.getElementById('boton_l');
 boton.remove();
 contenedor=document.getElementById('contenedor');
 
 contenedor.innerHTML +="Bienvenid@ " + usuario; 
-
+  }
 </script>
 
 </html>
